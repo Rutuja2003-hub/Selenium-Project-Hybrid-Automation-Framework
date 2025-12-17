@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="5" failed="1" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[OnStart]]>
+    </line>
+    <line>
+      <![CDATA[tc_001 is OnTestStart]]>
+    </line>
+    <line>
+      <![CDATA[testcase pass]]>
+    </line>
+    <line>
+      <![CDATA[tc_002 is OnTestStart]]>
+    </line>
+    <line>
+      <![CDATA[testcase pass]]>
+    </line>
+    <line>
+      <![CDATA[tc_003 is OnTestStart]]>
+    </line>
+    <line>
+      <![CDATA[testcase pass]]>
+    </line>
+    <line>
+      <![CDATA[tc_004 is OnTestStart]]>
+    </line>
+    <line>
+      <![CDATA[tc_004 is OnTestFailure]]>
+    </line>
+    <line>
+      <![CDATA[tc_005 is OnTestStart]]>
+    </line>
+    <line>
+      <![CDATA[testcase pass]]>
+    </line>
+    <line>
+      <![CDATA[tc_006 is OnTestStart]]>
+    </line>
+    <line>
+      <![CDATA[testcase pass]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2025-12-17T12:58:18 IST" name="Default suite" finished-at="2025-12-17T12:59:26 IST" duration-ms="67924">
+    <groups>
+    </groups>
+    <test started-at="2025-12-17T12:58:18 IST" name="Default test" finished-at="2025-12-17T12:59:26 IST" duration-ms="67924">
+      <class name="Login.LoginPage">
+        <test-method is-config="true" signature="Login()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:58:19 IST" name="Login" finished-at="2025-12-17T12:58:29 IST" duration-ms="9572" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="tc_001()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:58:29 IST" name="tc_001" finished-at="2025-12-17T12:58:30 IST" duration-ms="1004" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[tc_001 is OnTestStart]]>
+            </line>
+            <line>
+              <![CDATA[testcase pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_001 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:58:30 IST" name="postCondition" finished-at="2025-12-17T12:58:30 IST" duration-ms="311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:58:30 IST" name="Login" finished-at="2025-12-17T12:58:37 IST" duration-ms="6858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="tc_002()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:58:37 IST" name="tc_002" finished-at="2025-12-17T12:58:38 IST" duration-ms="1073" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[tc_002 is OnTestStart]]>
+            </line>
+            <line>
+              <![CDATA[testcase pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_002 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:58:38 IST" name="postCondition" finished-at="2025-12-17T12:58:38 IST" duration-ms="326" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:58:38 IST" name="Login" finished-at="2025-12-17T12:58:46 IST" duration-ms="7968" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="tc_003()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:58:46 IST" name="tc_003" finished-at="2025-12-17T12:58:50 IST" duration-ms="3832" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[tc_003 is OnTestStart]]>
+            </line>
+            <line>
+              <![CDATA[testcase pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_003 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:58:50 IST" name="postCondition" finished-at="2025-12-17T12:58:50 IST" duration-ms="338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:58:50 IST" name="Login" finished-at="2025-12-17T12:58:57 IST" duration-ms="6881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="tc_004()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:58:57 IST" name="tc_004" finished-at="2025-12-17T12:59:05 IST" duration-ms="8259" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Invalid credentials – testcase failed expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Invalid credentials – testcase failed expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at Login.LoginPage.tc_004(LoginPage.java:55)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+            <line>
+              <![CDATA[tc_004 is OnTestStart]]>
+            </line>
+            <line>
+              <![CDATA[tc_004 is OnTestFailure]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_004 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:59:09 IST" name="postCondition" finished-at="2025-12-17T12:59:09 IST" duration-ms="347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:59:09 IST" name="Login" finished-at="2025-12-17T12:59:16 IST" duration-ms="6983" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="tc_005()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:59:16 IST" name="tc_005" finished-at="2025-12-17T12:59:18 IST" duration-ms="2154" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[tc_005 is OnTestStart]]>
+            </line>
+            <line>
+              <![CDATA[testcase pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_005 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:59:18 IST" name="postCondition" finished-at="2025-12-17T12:59:19 IST" duration-ms="869" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+        <test-method is-config="true" signature="Login()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:59:19 IST" name="Login" finished-at="2025-12-17T12:59:25 IST" duration-ms="5986" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="tc_006()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:59:25 IST" name="tc_006" finished-at="2025-12-17T12:59:26 IST" duration-ms="884" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[tc_006 is OnTestStart]]>
+            </line>
+            <line>
+              <![CDATA[testcase pass]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tc_006 -->
+        <test-method is-config="true" signature="postCondition()[pri:0, instance:Login.LoginPage@206a70ef]" started-at="2025-12-17T12:59:26 IST" name="postCondition" finished-at="2025-12-17T12:59:26 IST" duration-ms="289" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postCondition -->
+      </class> <!-- Login.LoginPage -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
