@@ -1,0 +1,252 @@
+<html>
+<head>
+<title>TestNG:  DashboardModule</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>DashboardModule</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Jan 02 11:20:43 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>124 seconds (124979 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Functional.DashboardPage.TC_010()'><b>TC_010</b><br>Test class: Functional.DashboardPage<br/>
+<a href="#Output-1719854757" onClick='toggleBox("Output-1719854757", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1719854757" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1719854757">
+DashboardPage-TC_010 is OnTestStart<br/>
+DashboardPage-TC_010 is OnTestFailure<br/>
+</div>
+</td>
+<td><div><pre>java.lang.AssertionError: I failed it manually
+	at Functional.DashboardPage.TC_010(DashboardPage.java:108)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 26 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1719854757", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1719854757'><pre>java.lang.AssertionError: I failed it manually
+	at org.testng.Assert.fail(Assert.java:111)
+	at Functional.DashboardPage.TC_010(DashboardPage.java:108)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>Functional.DashboardPage@6a2f6f80</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Functional.DashboardPage.TC_002()'><b>TC_002</b><br>Test class: Functional.DashboardPage<br/>
+<a href="#Output-1760175419" onClick='toggleBox("Output-1760175419", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1760175419" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1760175419">
+DashboardPage-TC_002 is OnTestStart<br/>
+testcase pass<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Functional.DashboardPage@6a2f6f80</td></tr>
+<tr>
+<td title='Functional.DashboardPage.TC_008()'><b>TC_008</b><br>Test class: Functional.DashboardPage<br/>
+<a href="#Output-1859227008" onClick='toggleBox("Output-1859227008", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1859227008" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1859227008">
+DashboardPage-TC_008 is OnTestStart<br/>
+testcase pass<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Functional.DashboardPage@6a2f6f80</td></tr>
+<tr>
+<td title='Functional.DashboardPage.TC_007()'><b>TC_007</b><br>Test class: Functional.DashboardPage<br/>
+<a href="#Output-1207664329" onClick='toggleBox("Output-1207664329", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1207664329" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1207664329">
+DashboardPage-TC_007 is OnTestStart<br/>
+testcase pass<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Functional.DashboardPage@6a2f6f80</td></tr>
+<tr>
+<td title='Functional.DashboardPage.TC_001()'><b>TC_001</b><br>Test class: Functional.DashboardPage<br/>
+<a href="#Output-1906635841" onClick='toggleBox("Output-1906635841", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1906635841" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1906635841">
+DashboardPage-TC_001 is OnTestStart<br/>
+testcase pass<br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>Functional.DashboardPage@6a2f6f80</td></tr>
+<tr>
+<td title='Functional.DashboardPage.TC_004()'><b>TC_004</b><br>Test class: Functional.DashboardPage<br/>
+<a href="#Output-79791382" onClick='toggleBox("Output-79791382", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-79791382" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-79791382">
+DashboardPage-TC_004 is OnTestStart<br/>
+testcase pass<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Functional.DashboardPage@6a2f6f80</td></tr>
+<tr>
+<td title='Functional.DashboardPage.TC_009()'><b>TC_009</b><br>Test class: Functional.DashboardPage<br/>
+<a href="#Output-303491903" onClick='toggleBox("Output-303491903", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-303491903" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-303491903">
+DashboardPage-TC_009 is OnTestStart<br/>
+testcase pass<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>Functional.DashboardPage@6a2f6f80</td></tr>
+<tr>
+<td title='Functional.DashboardPage.TC_005()'><b>TC_005</b><br>Test class: Functional.DashboardPage<br/>
+<a href="#Output-1402751024" onClick='toggleBox("Output-1402751024", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1402751024" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1402751024">
+DashboardPage-TC_005 is OnTestStart<br/>
+testcase pass<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Functional.DashboardPage@6a2f6f80</td></tr>
+<tr>
+<td title='Functional.DashboardPage.TC_003()'><b>TC_003</b><br>Test class: Functional.DashboardPage<br/>
+<a href="#Output-897541009" onClick='toggleBox("Output-897541009", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-897541009" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-897541009">
+DashboardPage-TC_003 is OnTestStart<br/>
+testcase pass<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Functional.DashboardPage@6a2f6f80</td></tr>
+<tr>
+<td title='Functional.DashboardPage.TC_006()'><b>TC_006</b><br>Test class: Functional.DashboardPage<br/>
+<a href="#Output-1271515799" onClick='toggleBox("Output-1271515799", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1271515799" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1271515799">
+DashboardPage-TC_006 is OnTestStart<br/>
+testcase pass<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Functional.DashboardPage@6a2f6f80</td></tr>
+</table><p>
+</body>
+</html>

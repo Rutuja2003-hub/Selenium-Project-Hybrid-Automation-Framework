@@ -59,6 +59,11 @@ public class PimPage_Pom_1
 	@FindBy(xpath= "//a[text()='Reports']")
 	public WebElement reports;
 	
+	@FindBy(xpath= "//span[text()='Invalid']")
+	public WebElement invalid;
+	
+	@FindBy(xpath= "//div[@class='orangehrm-modal-footer']/button[2]")
+	public WebElement yes_deleteButton;
 	
 
 	public void  pim_Button()
@@ -125,5 +130,10 @@ public class PimPage_Pom_1
 	{
 		reports.click();
 	}
+	public void yes_deleteButton()
+	{
+		yes_deleteButton.click();
+	}
+	
 	
 }

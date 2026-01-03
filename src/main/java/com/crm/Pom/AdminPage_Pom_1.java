@@ -65,7 +65,16 @@ public class AdminPage_Pom_1
 
 		@FindBy(xpath = "(//span[@class='oxd-topbar-body-nav-tab-item'])[5]")
 		public WebElement configuration_Dropdown;
-
+		
+		@FindBy(xpath = "//span[@class='oxd-text oxd-text--span oxd-input-field-error-message oxd-input-group__message']")
+		public WebElement invalidMessage;
+		
+		@FindBy(xpath = "//div[@class='oxd-toast oxd-toast--error oxd-toast-container--toast']")
+		public WebElement cannotBeDeleted_Message;
+		
+		@FindBy(xpath = "//h6[text()='Nationalities']")
+		public WebElement nationalities_Page;
+		
 		public void admin_Button() {
 			admin_Button.click();
 		}
@@ -137,6 +146,8 @@ public class AdminPage_Pom_1
 		public void corporateBranding_Button() {
 			corporateBranding_Button.click();
 		}
+		
+		
 
 }
 

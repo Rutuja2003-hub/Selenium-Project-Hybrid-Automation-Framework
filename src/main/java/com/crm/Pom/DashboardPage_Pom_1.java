@@ -68,7 +68,23 @@ public class DashboardPage_Pom_1
 
 	@FindBy(xpath = "//button[@title='My Timesheet']")
 	public WebElement myTimesheet_Logo;
-
+	
+	@FindBy(xpath = "(//div[@class='oxd-sheet oxd-sheet--rounded oxd-sheet--white orangehrm-dashboard-widget'])[2]")
+	public WebElement myAction_Widget;
+	
+	@FindBy(xpath = "(//div[@class='oxd-sheet oxd-sheet--rounded oxd-sheet--white orangehrm-dashboard-widget'])[4]")
+	public WebElement buzzLatestPosts;
+	
+	@FindBy(xpath = "//p[text()='Quick Launch']")
+	public WebElement quickLunch_Text;
+	
+	@FindBy(xpath = "//input[@placeholder='Type for hints...']")
+	public WebElement employee_NameOfTimeSheet;
+	
+	@FindBy(xpath= "(//div[@class='oxd-select-text oxd-select-text--active'])[2]")
+	public WebElement leave_Type;
+	
+	
 	public void orangeHRM_logo() {
 		orangeHRM_logo.click();
 	}
@@ -99,6 +115,15 @@ public class DashboardPage_Pom_1
 
 	public void upgrade_Button() {
 		upgrade_Button.click();
+	}
+	
+	public WebElement myAction_Widget()
+	{
+		return myAction_Widget;
+	}
+	
+	public WebElement buzzLatestPost() {
+		return buzzLatestPosts;
 	}
 
 	public void user_profile_rightCorner() {
@@ -143,5 +168,24 @@ public class DashboardPage_Pom_1
 
 	public void myTimesheet_Logo() {
 		myTimesheet_Logo.click();
+	}
+	
+	public WebElement quickLunch_Text()
+	{
+		return quickLunch_Text;
+	}
+	
+	public void employee_NameOfTimeSheet(String data)
+	{
+		employee_NameOfTimeSheet.sendKeys(data);
+	}
+	
+	public WebElement employee_NameOfTimeSheet1()
+	{
+		return employee_NameOfTimeSheet;
+	}
+	public void leave_Type()
+	{
+		leave_Type.click();
 	}
 }

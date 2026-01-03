@@ -15,18 +15,17 @@ public class LeavePage_Pom_1
 	@FindBy(xpath= "(//li[@class='oxd-main-menu-item-wrapper'])[3]")
 	public WebElement leave_Button;
 	
-	@FindBy(xpath= "(//input[@placeholder='yyyy-dd-mm'])[1]")
+	@FindBy(xpath= "(//input[@placeholder='dd-mm-yyyy'])[1]")
 	public WebElement from_Date;
 	
-	@FindBy(xpath= "(//input[@placeholder='yyyy-dd-mm'])[2]")
+	@FindBy(xpath= "(//input[@placeholder='dd-mm-yyyy'])[2]")
 	public WebElement to_Date;
 	
 	@FindBy(xpath= "(//div[@class='oxd-select-text oxd-select-text--active'])[1]")
 	public WebElement showLeave_WithStatus;
 	
-	@FindBy(xpath= "(//div[@class='oxd-select-text oxd-select-text--active'])[2]")
-	public WebElement leave_Type;
-	
+	@FindBy(xpath= "//div[@class='oxd-select-text oxd-select-text--active']")
+	public WebElement leave_Type;	
 
 	@FindBy(xpath= "//input[@placeholder='Type for hints...']")
 	public WebElement employee_Name;
@@ -58,9 +57,6 @@ public class LeavePage_Pom_1
 	@FindBy(xpath= "//a[text()='My Leave']")
 	public WebElement myLeave_Button;
 	
-	@FindBy(xpath= "//li[@class='--active oxd-topbar-body-nav-tab --parent']")
-	public WebElement entitlements;
-	
 	@FindBy(xpath= "(//span[@class='oxd-topbar-body-nav-tab-item'])[2]")
 	public WebElement reports;
 	
@@ -69,7 +65,12 @@ public class LeavePage_Pom_1
 	
 	@FindBy(xpath= "//a[text()='Assign Leave']")
 	public WebElement assignLeave_Button;
-	//a[text()='Assign Leave']
+ 
+	@FindBy(css= "i[class='oxd-icon bi-chevron-right']")
+	public WebElement fromDateCalendar_nextButton;
+ 
+	@FindBy(xpath= "//div[contains(@class,'oxd-calendar-date') and text()='12']")
+	public WebElement date;
 	
 	
 	public void leave_Button()
@@ -132,10 +133,6 @@ public class LeavePage_Pom_1
 	{
 		myLeave_Button.click();
 	}
-	public void entitlements()
-	{
-		entitlements.click();
-	}
 	public void reports()
 	{
 		reports.click();
@@ -148,5 +145,16 @@ public class LeavePage_Pom_1
 	{
 		assignLeave_Button.click();
 	}
+	public void	fromDateCalendar_nextButton()
+	{
+		fromDateCalendar_nextButton.click();
+	}
+	public void	date()
+	{
+		date.click();
+	}
+	
+	
+	
 
 }

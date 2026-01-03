@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="HybridSuite">
+	 <listeners>
+        <listener class-name="com.crm.Listeners.ExtentReportForAllModules"/>
+    </listeners>
+    
+	<test name="LoginModule">
+		<classes>
+			<class name="Functional.LoginPage" />
+		</classes>
+	</test>
+	<test name="DashboardModule">
+		<classes>
+			<class name="Functional.DashboardPage" />
+		</classes>
+	</test>
+	<test name="AdminModule">
+		<classes>
+			<class name="Functional.AdminPage" />
+		</classes>
+	</test>
+	<test name="PimModule">
+		<classes>
+			<class name="Functional.PimPage" />
+		</classes>
+	</test>
+	<test name="LeaveModule">
+		<classes>
+			<class name="Functional.LeavePage" />
+		</classes>
+	</test>
+	<test name="TimeModule">
+		<classes>
+			<class name="Functional.TimePage" />
+		</classes>
+	</test>
+	<test name="RecruitmentModule">
+		<classes>
+			<class name="Functional.RecruitmentPage" />
+		</classes>
+	</test>
+	<test name="MyInfoModule">
+		<classes>
+			<class name="Functional.MyInfoPage" />
+		</classes>
+	</test>
+	<test name="PerformanceModule">
+		<classes>
+			<class name="Functional.PerformancePage" />
+		</classes>
+	</test>
+	<test name="ClaimModule">
+		<classes>
+			<class name="Functional.ClaimPage" />
+		</classes>
+	</test>
+</suite> <!-- Suite -->
